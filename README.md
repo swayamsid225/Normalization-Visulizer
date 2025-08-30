@@ -99,7 +99,7 @@ Share normalization suggestions in the Community page
 
 ## Author
 
-Swayam Sidgor
-MANIT Bhopal
-Email: swayamsid225@gmail.com
-GitHub: swayamsid225
+**Swayam Sidgor**  
+MANIT Bhopal  
+Email: [swayamsidgor@gmail.com](mailto:swayamsidgor@gmail.com)  
+GitHub: [swayamsid225](https://github.com/swayamsid225)
