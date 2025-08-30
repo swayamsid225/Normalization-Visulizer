@@ -93,17 +93,17 @@ GitHub: swayamsid225
 ## Screenshots
 
 ### Home Page
-![Home Page](./images/home.png)
+![Home Page](./home.png)
 
 ### Upload SQL Page
-![Upload SQL](./images/upload.png)
+![Upload SQL](./upload.png)
 
 ### Write SQL Page
-![Write SQL](./images/write.png)
+![Write SQL](./write.png)
 
 ### Normalize Page
-![Normalize](./images/normalize.png)
+![Normalize](./normalize.png)
 
 ### Community Page
-![Write SQL](./images/community.png)
+![Write SQL](./community.png)
 
