@@ -79,18 +79,8 @@ Create issues for bugs and feature requests
 Submit PRs with improvements
 Share normalization suggestions in the Community page
 
-## License
 
-This project is licensed under the MIT License.
-
-## Author
-
-Swayam Sidgor
-MANIT Bhopal
-Email: swayamsid225@gmail.com
-GitHub: swayamsid225
-
-## Screenshots
+## Sample Images
 
 ### Home Page
 ![Home Page](./home.png)
@@ -107,3 +97,9 @@ GitHub: swayamsid225
 ### Community Page
 ![Write SQL](./community.png)
 
+## Author
+
+Swayam Sidgor
+MANIT Bhopal
+Email: swayamsid225@gmail.com
+GitHub: swayamsid225
