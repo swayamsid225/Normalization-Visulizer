@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import pako from "pako";
 
-// ------------------ Syntax Highlight Helper ------------------
 const syntaxHighlight = (json) => {
   if (typeof json !== "string") {
     json = JSON.stringify(json, null, 2); // Pretty print JSON
