@@ -1,6 +1,4 @@
 // utils/normalizer.js
-// Fixed & improved normalizer for frontend/backend use.
-// Exports: parseInput, parseSQLFile, normalizeSteps, canonicalCover, candidateKeys, closure, inferFDsFromTables, generateChenNotation
 
 /* ---------- small helpers ---------- */
 function trim(s) { return (s || '').trim(); }
@@ -446,7 +444,7 @@ function synthesize3NF(attrs, fds) {
   return relations.map(r => r.attrs.join(','));
 }
 
-/* ---------- BCNF decomposition (fixed) ---------- */
+/* ---------- BCNF decomposition---------- */
 
 function findViolatingFD(attrs, fds) {
   // look for fd where left is not superkey (i.e., closure(left) != attrs)
@@ -509,7 +507,7 @@ function bcnfDecompose(attrs, fds) {
   return uniqOut.map(r => r.join(','));
 }
 
-/* ---------- 2NF decomposition (fixed) ---------- */
+/* ---------- 2NF decomposition ---------- */
 function decompose2NF(relName, attrs, relPK, fds) {
   if (!Array.isArray(attrs) || !Array.isArray(fds)) {
     return [{ name: relName, attrs: attrs || [] }];
@@ -544,7 +542,7 @@ function decompose2NF(relName, attrs, relPK, fds) {
   return newRels;
 }
 
-// Fixed normalizeSteps with dependency loading
+// normalizeSteps with dependency loading
 function normalizeSteps(relations, fdsInput) {
   // Ensure every relation has a valid attributes array
   relations = (relations || []).map(rel => {
@@ -584,7 +582,7 @@ function normalizeSteps(relations, fdsInput) {
     attrs = safeFds.length ? attrsUnion(safeFds.map(fd => fd.left.concat(fd.right))) : [];
   }
 
-  // 1NF: Basic relations (assuming already atomic values)
+  // 1NF: Basic relations
   const nf1 = relations.map(rel => ({
     name: rel.name,
     attributes: rel.attributes,
@@ -674,7 +672,6 @@ function generateChenNotation(parsed) {
   return out;
 }
 
-/* ---------- exports ---------- */
 module.exports = {
   parseInput,
   parseSQLFile,
