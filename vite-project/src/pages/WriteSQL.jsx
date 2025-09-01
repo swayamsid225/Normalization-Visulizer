@@ -39,8 +39,8 @@ const generateDiagramElements = (relations) => {
       padding: 10,
       borderRadius: 8,
       background: '#fefefe',
-      color: 'black',          // ✅ Text color black
-      fontWeight: 'bold'       // (optional) make it stand out
+      color: 'black',          
+      fontWeight: 'bold'       
     },
   }));
 };
